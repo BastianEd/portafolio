@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProjectCard } from '../molecules/ProjectCard';
-import imguno from 'assets/images/pasteleria-mil-sabores.webp';
-import imgdos from 'assets/images/gamezone.webp';
+import pastelImage  from '../../assets/images/pasteleria-mil-sabores.webp';
+import imgdos from '../../assets/images/gamezone.webp';
 
 export const Projects: React.FC = () => {
     const projects = [
@@ -11,7 +11,7 @@ export const Projects: React.FC = () => {
             tags: ['HTML', 'CSS', 'JavaScript', 'Responsive', 'Authentication','Bootstrap'],
             github: 'https://github.com/BastianEd/MilSaboresDulces',
             demo: 'https://pasteleriamilsabores.netlify.app/',
-            image: imguno
+            image: pastelImage
         },
         {
             title: 'GameZone - Tienda de Videojuegos',
