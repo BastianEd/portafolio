@@ -1,6 +1,6 @@
 # Portafolio Personal de Bastián Rubio
 
-![Captura de pantalla del Portafolio](/public/images/Captura-Portafolio.webp)
+![Captura de pantalla del Portafolio](https://i.ibb.co/6c8BkJFn/Screenshot-1.png)
 
 Este es el repositorio de mi portafolio personal, una Single Page Application (SPA) construida desde cero para mostrar mis habilidades, experiencia y proyectos. El objetivo era crear una web moderna, rápida y visualmente atractiva, aplicando las mejores prácticas de desarrollo Frontend.
 
