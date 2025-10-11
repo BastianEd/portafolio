@@ -19,8 +19,8 @@ export const profileData = {
     about: {
         title: 'Sobre mí',
         paragraphs: [
-            `Me llamo Bastian Rubio, estudiante de Ingeniería Informática en Duoc UC. Apasionado por la tecnología y la programación, con especialización en Ciencia de Datos a partir del próximo año.`,
-            `Tengo experiencia en Python, bases de datos (Oracle SQL, MySQL) y automatización de procesos. He participado en proyectos como mi práctica en Banco de Chile, donde desarrollé herramientas de validación con Python.`,
+            `Me llamo Bastián Rubio, estudiante de Ingeniería Informática en Duoc UC. Apasionado por la tecnología y la programación, comenzando mi especialización en Ciencia de Datos el próximo año.`,
+            `Tengo experiencia en Python, Oracle SQL y automatización de procesos. He participado en proyectos como mi práctica en Banco de Chile, donde desarrollé herramientas de validación con Python.`,
             `Me interesa el análisis de datos, machine learning y crear soluciones que resuelvan problemas reales. Siempre estoy aprendiendo nuevas tecnologías y buscando aplicar mis conocimientos en proyectos prácticos.`
         ]
     },

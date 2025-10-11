@@ -14,27 +14,9 @@
         @apply font-sans antialiased;
     }
 }
-
-/*ESTILO DE BADGE DE DISPONIBLE PARA TRABAJAR*/
-/* DESPUÉS (con media query) */
-.badge-gradient-border {
-    border: 1.5px solid transparent; /* -> Borde más fino para móvil */
-    border-width: 3.5px;
-
-    background:
-            linear-gradient(#181f2a, #181f2a) padding-box,
-            linear-gradient(90deg, #2dd4ff, #93f6e6 20%, #feee5e 80%, #fd7c3a) border-box;
-}
-
-/* A partir de 768px, el borde vuelve a ser más grueso */
-@media (min-width: 300px) and (max-width: 767px) {
-    .badge-gradient-border {
-        margin-top: 1.4rem !important;
-        border-width: 3.5px;
-    }
-}
-
-
+/*==============================================================================*/
+/*==============================================================================*/
+/*==============================================================================*/
 /* tokens rápidos */
 :root {
     --bg: 16 16 20;
@@ -49,3 +31,73 @@ body {
     background: rgb(var(--bg));
     color: rgb(var(--fg));
 }
+/*==============================================================================*/
+/*=================ESTILO DE BADGE DE DISPONIBLE PARA TRABAJAR==================*/
+/*==============================================================================*/
+/* DESPUÉS (con media query) */
+.badge-gradient-border {
+    /* 1. Borde responsivo: más fino en móvil */
+    border: 1.5px solid transparent;
+
+    /* 2. Técnica para el borde con gradiente */
+    background:
+            linear-gradient(#181f2a, #181f2a) padding-box,
+            linear-gradient(90deg, #2dd4ff, #93f6e6 20%, #feee5e 80%, #fd7c3a) border-box;
+
+    /* 3. Propiedades para la animación */
+    background-size: 200% auto; /* Agrandamos el fondo para que el gradiente se mueva */
+    animation: gradient-flow 3s linear infinite; /* Aplicamos la misma animación que el logo */
+}
+
+/* Mantenemos la animación que ya definimos */
+@keyframes gradient-flow {
+    to {
+        background-position: 200% center;
+    }
+}
+/* A partir de 768px, el borde vuelve a ser más grueso */
+@media (min-width: 300px) and (max-width: 767px) {
+    .badge-gradient-border {
+        margin-top: 1.4rem !important;
+        border-width: 3.5px;
+    }
+}
+/*==============================================================================*/
+/*=====================ESTILO DE LOGO DE NAVBAR=================================*/
+/*==============================================================================*/
+
+/* Clase para el logo con gradiente animado */
+.logo-animated-gradient {
+    /* 1. Define un fondo de gradiente. Lo hacemos 3 veces más grande para que el movimiento sea suave */
+    background-image: linear-gradient(
+            to right,
+            #fd7c3a 20%,
+            #ffffff 40%, /* Amarillo de Tailwind (yellow-400) */
+            #93f6e6 60%,
+            #6aafe8 80%
+    );
+    background-size: 200% auto;
+
+    /* 2. Recorta el fondo para que solo sea visible en el texto */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* 3. Aplica la animación */
+    animation: gradient-flow 3s linear infinite;
+}
+
+/* Keyframes que mueven la posición del fondo */
+@keyframes gradient-flow {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/*==============================================================================*/
+/*==============================================================================*/
+/*==============================================================================*/
+
+
+
+
