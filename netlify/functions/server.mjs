@@ -1,8 +1,8 @@
 // netlify/functions/server.mjs
 
-import { createRequestHandler } from "@react-router/node";
+// AHORA: Usamos una importación de espacio de nombres (namespace)
+import * as reactRouterNode from "@react-router/node";
 import * as build from "../../build/server/index.js";
 
-// Este es el 'handler' que Netlify estaba buscando.
-// Envuelve nuestra aplicación de React Router en el formato correcto.
-export const handler = createRequestHandler(build);
+// Creamos el handler accediendo a la función a través del objeto del módulo
+export const handler = reactRouterNode.createRequestHandler(build);
