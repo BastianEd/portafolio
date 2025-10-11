@@ -1,5 +1,6 @@
 import React from 'react';
-import { WorkItem } from 'components/molecules/WorkItemProps';
+import { WorkItem } from '../molecules/WorkItem';
+import { profileData } from '../../app/data/profile';
 
 export const Experience: React.FC = () => (
     <section id="experiencia" className="py-20 px-4">
@@ -9,15 +10,15 @@ export const Experience: React.FC = () => (
                 Experiencia laboral
             </h2>
             <div className="relative ml-2">
-                <WorkItem
-                    title="Practicante Profesional"
-                    company="Banco de Chile"
-                    period="Diciembre 2023 — Enero 2024"
-                    description="Desarrollo de programas para validación y modificación de mallas de control
-                                 utilizando Python. Participación en proyectos de gestión y análisis de datos
-                                 enfocados en Big Data, contribuyendo a la automatización de procesos y mejora continua.
-                                 "
-                />
+                {profileData.experience.map((exp) => (
+                    <WorkItem
+                        key={exp.company}
+                        title={exp.title}
+                        company={exp.company}
+                        period={exp.period}
+                        description={exp.description}
+                    />
+                ))}
             </div>
         </div>
     </section>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface WorkItemProps {
+interface WorkItem {
     title: string;
     company: string;
     period: string;
@@ -8,7 +8,7 @@ interface WorkItemProps {
     moreLink?: string;
 }
 
-export const WorkItem: React.FC<WorkItemProps> = ({title, company, period, description, moreLink}) => (
+export const WorkItem: React.FC<WorkItem> = ({title, company, period, description, moreLink}) => (
     <div className="relative pl-8 pb-12 border-l border-gray-600 last:pb-0">
         <span className="absolute left-[-7px] top-2 w-3 h-3 bg-yellow-400 rounded-full"></span>
         <div className="mb-2">

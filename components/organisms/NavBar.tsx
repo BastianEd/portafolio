@@ -34,8 +34,8 @@ export const Navbar: React.FC = () => {
         >
             <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
                 {/* Logo */}
-                <a href="#" className="text-xl font-bold text-white">
-                    Bastian<span className="text-yellow-400">.dev</span>
+                <a href="#" className="text-xl font-bold">
+                    <span className="">Bastián</span>
                 </a>
 
                 {/* Desktop Menu */}

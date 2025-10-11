@@ -1,27 +1,33 @@
 import React from 'react';
-import { Icon } from '../atoms/Icon';
+import { FaGithub, FaLinkedin } from 'react-icons/fa'; // Importa los iconos que necesitas
+import { MdEmail } from 'react-icons/md';
+import { profileData } from '../../app/data/profile'; // Importa los datos
+
+// Mapeo de nombres a componentes de icono
+const iconMap: { [key: string]: React.ElementType } = {
+    github: FaGithub,
+    linkedin: FaLinkedin,
+    email: MdEmail
+};
 
 export const SocialLinks: React.FC = () => {
-    const socials = [
-        { name: 'github', url: 'https://github.com/BastianEd', label: 'GitHub' },
-        { name: 'linkedin', url: 'https://www.linkedin.com/in/bastián-rubio-meneses/', label: 'LinkedIn' },
-        { name: 'email', url: 'mailto:bastian@example.com', label: 'Email' }
-    ];
-
     return (
         <nav className="flex gap-4">
-            {socials.map((social) => (
-                <a
-                    key={social.name}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
-                    aria-label={social.label}
-                >
-                    <Icon name={social.name} size={36} />
-                </a>
-            ))}
+            {profileData.socials.map((social) => {
+                const IconComponent = iconMap[social.name];
+                return (
+                    <a
+                        key={social.name}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white transition-colors duration-300"
+                        aria-label={social.label}
+                    >
+                        {IconComponent && <IconComponent size={36} />}
+                    </a>
+                );
+            })}
         </nav>
     );
 };

@@ -2,9 +2,11 @@ import React from 'react';
 import { Button } from '../atoms/Button';
 import { Badge } from '../atoms/Badge';
 import { SocialLinks } from '../molecules/SocialLinks';
+import { profileData } from '../../app/data/profile';
 
 
 export const Hero: React.FC = () => {
+    const { hero } = profileData; // Extrae la sección hero
     return (
         <section className="flex flex-col justify-center items-center px-4 py-12 md:py-24">
             <div className="max-w-4xl mx-auto text-center">
@@ -15,22 +17,20 @@ export const Hero: React.FC = () => {
                     </Badge>
                 </div>
                 <h1 className="text-5xl md:text-7xl font-bold text-white mt-6 mb-4">
-                    Hola, soy Bastian Rubio
+                    {hero.title}
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-300 mb-4">
-                    <span className="text-yellow-400">Estudiante de Ingeniero en informática</span> de Chile.
+                    <span className="text-yellow-400">{hero.subtitle}</span> de {hero.university}.
                 </p>
-                <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-                    Especializado en el desarrollo de aplicaciones web y soluciones de datos utilizando
-                    tecnologías como <b><i> Python, JavaScript, HTML5, CSS3, Oracle SQL, y Java</i></b>,
-                    combinando experiencia profesional en proyectos innovadores y prácticas
-                    en ingeniería informática.
-                </p>
+                {/* Usamos dangerouslySetInnerHTML para renderizar el HTML de las negritas */}
+                <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto"
+                   dangerouslySetInnerHTML={{ __html: hero.description.replace(/<b><i>/g, '<b><i>').replace(/<\/i><\/b>/g, '</i></b>') }}
+                />
                 <div className="flex justify-center gap-4 mb-8">
-                    <Button href="https://www.linkedin.com/in/bastián-rubio-meneses/" variant="primary">
+                    <Button href={hero.contactLink} variant="primary">
                         Contáctame
                     </Button>
-                    <Button href="https://github.com/BastianEd" variant="secondary">
+                    <Button href={hero.projectsLink} variant="secondary">
                         Ver proyectos
                     </Button>
                 </div>

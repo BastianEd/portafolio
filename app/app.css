@@ -16,11 +16,22 @@
 }
 
 /*ESTILO DE BADGE DE DISPONIBLE PARA TRABAJAR*/
+/* DESPUÉS (con media query) */
 .badge-gradient-border {
-    border: 2.5px solid transparent;
+    border: 1.5px solid transparent; /* -> Borde más fino para móvil */
+    border-width: 3.5px;
+
     background:
             linear-gradient(#181f2a, #181f2a) padding-box,
             linear-gradient(90deg, #2dd4ff, #93f6e6 20%, #feee5e 80%, #fd7c3a) border-box;
+}
+
+/* A partir de 768px, el borde vuelve a ser más grueso */
+@media (min-width: 300px) and (max-width: 767px) {
+    .badge-gradient-border {
+        margin-top: 1.4rem !important;
+        border-width: 3.5px;
+    }
 }
 
 
