@@ -1,8 +1,8 @@
-// netlify/functions/server.mjs
+// netlify/functions/server.js
 
-// AHORA: Usamos una importación de espacio de nombres (namespace)
-import * as reactRouterNode from "@react-router/node";
-import * as build from "../../build/server/index.js";
+// Usamos require() en lugar de import
+const { createRequestHandler } = require("@react-router/node");
+const build = require("../../build/server/index.js");
 
-// Creamos el handler accediendo a la función a través del objeto del módulo
-export const handler = reactRouterNode.createRequestHandler(build);
+// La exportación del handler sigue siendo la misma
+exports.handler = createRequestHandler(build);
