@@ -1,7 +1,6 @@
 import React from 'react';
 import { ProjectCard } from '../molecules/ProjectCard';
-import pastelImage  from '../../assets/images/pasteleria-mil-sabores.webp';
-import gameImage from '../../assets/images/gamezone.webp';
+
 
 export const Projects: React.FC = () => {
     const projects = [
@@ -11,7 +10,7 @@ export const Projects: React.FC = () => {
             tags: ['HTML', 'CSS', 'JavaScript', 'Responsive', 'Authentication','Bootstrap'],
             github: 'https://github.com/BastianEd/MilSaboresDulces',
             demo: 'https://pasteleriamilsabores.netlify.app/',
-            image: pastelImage
+            image: 'https://i.ibb.co/4nkWXDgf/pasteleria-mil-sabores.webp'
         },
         {
             title: 'GameZone - Tienda de Videojuegos',
@@ -19,7 +18,7 @@ export const Projects: React.FC = () => {
             tags: ['HTML', 'CSS', 'JavaScript', 'Responsive', 'Authentication','Bootstrap'],
             github: 'https://github.com/BastianEd/Web_GameZon_Evaluacion_Uno',
             demo: 'https://gamezone-store.netlify.app/',
-            image: gameImage
+            image: 'https://i.ibb.co/rfwkfJH5/gamezone.webp'
         }
     ];
 
