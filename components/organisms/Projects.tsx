@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProjectCard } from '../molecules/ProjectCard';
-import imguno from 'assets/images/pasteleria-mil-sabores.png';
-import imgdos from 'assets/images/gamezone.png';
+import imguno from 'assets/images/pasteleria-mil-sabores.webp';
+import imgdos from 'assets/images/gamezone.webp';
 
 export const Projects: React.FC = () => {
     const projects = [
