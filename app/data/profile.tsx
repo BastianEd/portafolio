@@ -43,7 +43,7 @@ export const profileData = {
             tags: ['HTML', 'CSS', 'JavaScript', 'Responsive', 'Authentication','Bootstrap'],
             github: 'https://github.com/BastianEd/MilSaboresDulces',
             demo: 'https://pasteleriamilsabores.netlify.app/',
-            image: '/images/pasteleria-mil-sabores.webp'
+            image: 'assets/images/pasteleria-mil-sabores.webp'
         },
         {
             title: 'GameZone - Tienda de Videojuegos',
@@ -51,7 +51,7 @@ export const profileData = {
             tags: ['HTML', 'CSS', 'JavaScript', 'Responsive', 'Authentication','Bootstrap'],
             github: 'https://github.com/BastianEd/Web_GameZon_Evaluacion_Uno',
             demo: 'https://gamezone-store.netlify.app/',
-            image: '/images/gamezone.webp'
+            image: 'assets/images/gamezone.webp'
         }
     ],
     // Links para redes sociales
