@@ -31,6 +31,20 @@ body {
     background: rgb(var(--bg));
     color: rgb(var(--fg));
 }
+
+@layer base {
+    html {
+        @apply scroll-smooth; /* -> O puedes añadirlo aquí con Tailwind */
+    }
+
+    * {
+        @apply scroll-smooth; /* -> O mantenerlo aquí como lo tenías */
+    }
+
+    body {
+        @apply font-sans antialiased;
+    }
+}
 /*==============================================================================*/
 /*=================ESTILO DE BADGE DE DISPONIBLE PARA TRABAJAR==================*/
 /*==============================================================================*/
