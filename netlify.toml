@@ -1,13 +1,11 @@
-# netlify.toml
-
-# Configuración del proceso de construcción
 [build]
-  command = "npm run build" # El comando para construir tu proyecto
-  publish = "build/client"  # Directorio con los assets estáticos (CSS, JS del cliente)
-  functions = "netlify/functions" # <-- APUNTA A LA NUEVA CARPETA
+  command = "npm run build"
+  publish = "dist"
 
-# Redireccionamiento para que todo el tráfico pase por nuestra función SSR
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/server"
+  to = "/index.html"
   status = 200
+
+[build.environment]
+  NODE_VERSION = "20"
