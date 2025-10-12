@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
   base: '/',
   build: {
-    outDir: 'dist',
+    outDir: 'build/client',
     sourcemap: false
   }
 });
