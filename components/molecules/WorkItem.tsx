@@ -12,9 +12,9 @@ export const WorkItem: React.FC<WorkItem> = ({title, company, period, descriptio
     <div className="relative pl-8 pb-12 border-l border-gray-600 last:pb-0">
         <span className="absolute left-[-7px] top-2 w-3 h-3 bg-yellow-400 rounded-full"></span>
         <div className="mb-2">
-            <h3 className="text-lg font-bold text-yellow-400">{title}</h3>
-            <p className="text-white font-medium">{company}</p>
-            <p className="text-gray-400 text-sm">{period}</p>
+            <h3 className="text-lg font-bold text-yellow-400 xl:text-xl">{title}</h3>
+            <p className="text-white font-medium md:text-lg">{company}</p>
+            <p className="text-gray-400 text-sm md:text-base">{period}</p>
         </div>
         <div className="text-gray-300 text-md">
             <p>{description}</p>
