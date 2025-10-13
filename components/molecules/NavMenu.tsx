@@ -5,6 +5,7 @@ export const NavMenu: React.FC = () => {
     const menuItems = [
         { label: 'Inicio', href: '#' },
         { label: 'Experiencia', href: '#experiencia' },
+        { label: 'Certificaciones', href: '#certificaciones' },
         { label: 'Proyectos', href: '#proyectos' },
         { label: 'Sobre mí', href: '#sobre-mi' },
     ];
