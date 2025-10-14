@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { NavMenu } from '../molecules/NavMenu';
-import { MobileMenuButton } from '../molecules/MobileMenuButton';
-import { NavLink } from '../atoms/NavLink';
+import { NavMenu } from '../../molecules/NavMenu/NavMenu';
+import { MobileMenuButton } from '../../molecules/MobileMenuButton/MobileMenuButton';
+import { NavLink } from '../../atoms/NavLink/NavLink';
 
 export const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);

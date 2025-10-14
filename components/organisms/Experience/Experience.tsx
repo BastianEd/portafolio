@@ -1,5 +1,5 @@
 import React from 'react';
-import { WorkItem } from '../molecules/WorkItem';
+import { WorkItem } from '../../molecules/WorkItem/WorkItem';
 import { profileData } from '~/data/profile';
 
 export const Experience: React.FC = () => (

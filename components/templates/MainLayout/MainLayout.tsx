@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from '../organisms/NavBar';
+import { Navbar } from '../../organisms/NavBar/NavBar';
 
 interface MainLayoutProps {
     children: React.ReactNode;

@@ -5,7 +5,7 @@ import {
     Scripts,
     ScrollRestoration,
 } from "react-router";
-import { MainLayout } from "../components/templates/MainLayout";
+import { MainLayout } from "../components/templates/MainLayout/MainLayout";
 import "./app.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {

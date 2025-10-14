@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; // Importa los iconos que necesitas
 import { MdEmail } from 'react-icons/md';
-import { profileData } from '../../app/data/profile'; // Importa los datos
+import { profileData } from '~/data/profile'; // Importa los datos
 
 // Mapeo de nombres a componentes de icono
 const iconMap: { [key: string]: React.ElementType } = {

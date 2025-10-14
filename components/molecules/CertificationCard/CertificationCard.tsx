@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../atoms/Button';
+import { Button } from '../../atoms/Button/Button';
 
 interface CertificationCardProps {
     title: string;
@@ -26,7 +26,7 @@ export const CertificationCard: React.FC<CertificationCardProps> = ({
                         <img
                             src={badgeImage}
                             alt={`Insignia de ${title}`}
-                            className="w-16 h-16 object-contain"
+                            className="w-30 h-30 object-contain"
                         />
                     </div>
                     {/* Contenido de texto */}

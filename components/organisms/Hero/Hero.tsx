@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button } from '../atoms/Button';
-import { Badge } from '../atoms/Badge';
-import { SocialLinks } from '../molecules/SocialLinks';
+import { Button } from '../../atoms/Button/Button';
+import { Badge } from '../../atoms/Badge/Badge';
+import { SocialLinks } from '../../molecules/SocialLinks/SocialLinks';
 import { profileData } from '~/data/profile';
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectCard } from '../molecules/ProjectCard';
+import { ProjectCard } from '../../molecules/ProjectCard/ProjectCard';
 import { profileData } from '~/data/profile';
 
 export const Projects: React.FC = () => {

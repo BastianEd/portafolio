@@ -1,5 +1,5 @@
 import React from 'react';
-import { CertificationCard } from '../molecules/CertificationCard';
+import { CertificationCard } from '../../molecules/CertificationCard/CertificationCard';
 import { profileData } from '~/data/profile';
 
 export const Certifications: React.FC = () => {

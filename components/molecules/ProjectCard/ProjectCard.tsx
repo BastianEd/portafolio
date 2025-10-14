@@ -1,6 +1,6 @@
 import React from 'react';
-import { Badge } from '../atoms/Badge';
-import { Button } from '../atoms/Button';
+import { Badge } from '../../atoms/Badge/Badge';
+import { Button } from '../../atoms/Button/Button';
 
 interface ProjectCardProps {
     title: string;

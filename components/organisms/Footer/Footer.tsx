@@ -1,5 +1,5 @@
 import React from 'react';
-import { SocialLinks } from '../molecules/SocialLinks';
+import { SocialLinks } from '../../molecules/SocialLinks/SocialLinks';
 
 export const Footer: React.FC = () => {
     return (
