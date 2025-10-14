@@ -53,12 +53,3 @@ Si deseas ejecutar este proyecto en tu entorno local, sigue estos sencillos paso
 La aplicación estará disponible en `http://localhost:5173`.
 
 ---
-
-## 📦 Building y Despliegue
-
-### Build de Producción
-
-Para crear una versión optimizada para producción:
-
-```bash
-npm run build
