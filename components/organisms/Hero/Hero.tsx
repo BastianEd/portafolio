@@ -30,6 +30,9 @@ export const Hero: React.FC = () => {
                     <Button href={hero.contactLink} variant="primary">
                         Contáctame
                     </Button>
+                    <Button href={hero.cvLink} variant="secondary">
+                        Curriculum Vitae
+                    </Button>
                     <Button href={hero.projectsLink} variant="secondary">
                         Ver proyectos
                     </Button>

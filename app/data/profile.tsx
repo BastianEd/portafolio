@@ -13,7 +13,8 @@ export const profileData = {
                         combinen automatización, bases de datos y soluciones web.
                         `,
         contactLink: 'https://www.linkedin.com/in/bastián-rubio-meneses/',
-        projectsLink: '#proyectos'
+        projectsLink: '#proyectos',
+        cvLink: 'https://docs.google.com/document/d/1IdjeutWH_cJMieToEg0W_XCc0zqk853iq7cp9Q2zdis/edit?usp=sharing'
     },
     // Datos para la sección Sobre Mí
     about: {
