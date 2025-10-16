@@ -4,9 +4,10 @@ interface NavLinkProps {
     href: string;
     children: React.ReactNode;
     active?: boolean;
+    icon?: React.ReactNode;
 }
 
-export const NavLink: React.FC<NavLinkProps> = ({ href, children, active = false }) => {
+export const NavLink: React.FC<NavLinkProps> = ({ href, children, active = false, icon }) => {
     return (
         <a
             href={href}
@@ -18,6 +19,7 @@ export const NavLink: React.FC<NavLinkProps> = ({ href, children, active = false
             }
       `}
         >
+            {icon && <span className="flex text-xl justify-center">{icon}</span>}
             {children}
         </a>
     );
