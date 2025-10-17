@@ -7,6 +7,13 @@ interface ButtonProps {
     variant?: 'primary' | 'secondary';
 }
 
+/**
+ * Componente Atómico: Button
+ * * Renderiza un botón o un enlace con estilos predefinidos. Es el principal
+ * elemento para llamadas a la acción (CTAs) en la aplicación.
+ * Se adapta automáticamente a una etiqueta `<a>` si se le pasa una prop `href`.
+ * * @param {ButtonProps} props - Las propiedades para configurar el botón.
+ */
 export const Button: React.FC<ButtonProps> = ({
                                                   children,
                                                   href,
@@ -32,7 +39,7 @@ export const Button: React.FC<ButtonProps> = ({
     }
 
     return (
-        <button type="button" onClick={onClick} className={`${baseClasses} ${variantClasses}`}>
+            <button type="button" onClick={onClick} className={`${baseClasses} ${variantClasses}`}>
             {children}
         </button>
     );

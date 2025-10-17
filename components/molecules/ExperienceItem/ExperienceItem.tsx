@@ -7,6 +7,13 @@ interface ExperienceItemProps {
     description: string;
 }
 
+/**
+ * Componente Molecular: ExperienceItem
+ * * Representa una única entrada en la línea de tiempo de experiencia profesional.
+ * Combina varios elementos de texto (átomos) para mostrar de forma estructurada
+ * un puesto de trabajo, incluyendo el rol, la empresa, el período y una descripción.
+ * * @param {ExperienceItemProps} props - Las propiedades que definen el contenido del item de experiencia.
+ */
 export const ExperienceItem: React.FC<ExperienceItemProps> = ({
                                                                   title,
                                                                   company,

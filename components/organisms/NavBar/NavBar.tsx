@@ -2,10 +2,21 @@ import React, { useState, useEffect } from 'react';
 import { NavMenu } from '../../molecules/NavMenu/NavMenu';
 import { MobileMenuButton } from '../../molecules/MobileMenuButton/MobileMenuButton';
 import { NavLink } from '../../atoms/NavLink/NavLink';
-// -> 1. Importa los mismos íconos aquí
+
 import { FaHome, FaBriefcase, FaLaptopCode, FaUser } from 'react-icons/fa';
 import { GiDiploma } from "react-icons/gi";
 
+/**
+ * Componente Organismo: Navbar
+ * * Renderiza la barra de navegación principal de la aplicación. Este componente
+ * es responsivo y gestiona su propio estado para la visibilidad del menú móvil.
+ *
+ * Características:
+ * - Muestra un menú de navegación completo (`NavMenu`) en pantallas de escritorio.
+ * - Muestra un botón de hamburguesa (`MobileMenuButton`) en pantallas móviles.
+ * - Gestiona el estado `isOpen` para mostrar u ocultar el menú desplegable móvil.
+ * - Cambia su estilo de fondo al hacer scroll (`isScrolled`) para mejorar la visibilidad.
+ */
 export const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
@@ -18,9 +29,8 @@ export const Navbar: React.FC = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // -> 2. Actualiza también este array
     const menuItems = [
-        { label: 'Inicio', href: '#', icon: <FaHome /> },
+        { label: 'Inicio', href: '#inicio', icon: <FaHome /> },
         { label: 'Experiencia', href: '#experiencia', icon: <FaBriefcase /> },
         { label: 'Certificaciones', href: '#certificaciones', icon: <GiDiploma /> },
         { label: 'Proyectos', href: '#proyectos', icon: <FaLaptopCode /> },

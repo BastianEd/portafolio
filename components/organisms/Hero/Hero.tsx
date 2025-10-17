@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
     // Si había reemplazos específicos, se pueden aplicar después de sanitizar
     const finalDescription = sanitizedDescription.replace(/<b><i>/g, '<b><i>').replace(/<\/i><\/b>/g, '</i></b>');
     return (
-        <section className="flex flex-col justify-center items-center px-4 py-12 md:py-24">
+        <section id="inicio" className="flex flex-col justify-center items-center px-4 py-12 md:py-24">
             <div className="max-w-4xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-[1440px] mx-auto text-center">
                 <div className="relative inline-flex items-center justify-center">
                     <span className="absolute inset-0 rounded-full pointer-events-none animate-spin-gradient z-0" />

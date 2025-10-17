@@ -11,6 +11,14 @@ interface ProjectCardProps {
     image?: string;
 }
 
+/**
+ * Componente Molecular: ProjectCard
+ * * Muestra una tarjeta de previsualización para un proyecto individual.
+ * Combina varios átomos como una imagen, `Badge` para las tecnologías y `Button`
+ * para los enlaces de "Ver código" y "Ver demo". Está diseñada para ser
+ * utilizada dentro de una grilla de proyectos.
+ * * @param {ProjectCardProps} props - Las propiedades que definen el contenido de la tarjeta de proyecto.
+ */
 export const ProjectCard: React.FC<ProjectCardProps> = ({
                                                             title,
                                                             description,

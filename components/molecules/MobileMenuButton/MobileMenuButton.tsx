@@ -5,6 +5,14 @@ interface MobileMenuButtonProps {
     onClick: () => void;
 }
 
+/**
+ * Componente Molecular: MobileMenuButton
+ * * Renderiza un botón de tipo "hamburguesa" que se transforma en una "X"
+ * al activarse. Está diseñado para controlar la visibilidad del menú de
+ * navegación en dispositivos móviles. Su apariencia cambia mediante transiciones CSS
+ * basadas en la prop `isOpen`.
+ * * @param {MobileMenuButtonProps} props - Las propiedades para controlar el estado del botón.
+ */
 export const MobileMenuButton: React.FC<MobileMenuButtonProps> = ({ isOpen, onClick }) => {
     return (
         <button

@@ -8,6 +8,13 @@ interface WorkItem {
     moreLink?: string;
 }
 
+/**
+ * Componente Molecular: WorkItem
+ * * Renderiza un bloque de información cohesivo para un solo item de experiencia
+ * en una línea de tiempo. Combina varios átomos de texto para mostrar el título,
+ * compañía, período y descripción de una experiencia laboral o proyecto.
+ * * @param {WorkItem} props - Las propiedades que definen el contenido del item.
+ */
 export const WorkItem: React.FC<WorkItem> = ({title, company, period, description, moreLink}) => (
     // Reducimos el padding izquierdo para dar más espacio en móviles
     <div className="relative pl-6 pb-12 border-l border-gray-600 last:pb-0">

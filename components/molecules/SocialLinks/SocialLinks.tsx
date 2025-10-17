@@ -10,6 +10,13 @@ const iconMap: { [key: string]: React.ElementType } = {
     email: MdEmail
 };
 
+/**
+ * Componente Molecular: SocialLinks
+ * * Renderiza una lista de enlaces a redes sociales con sus íconos correspondientes.
+ * Este componente lee la información de los enlaces desde el archivo centralizado
+ * `profileData` y utiliza un mapeo (`iconMap`) para seleccionar dinámicamente
+ * el ícono correcto de `react-icons`.
+ */
 export const SocialLinks: React.FC = () => {
     return (
         <nav className="flex gap-4">

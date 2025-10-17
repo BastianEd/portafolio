@@ -9,6 +9,13 @@ interface CertificationCardProps {
     badgeImage: string;
 }
 
+/**
+ * Componente Molecular: CertificationCard
+ * * Muestra una tarjeta individual para una certificación. Combina una imagen (átomo),
+ * textos descriptivos (átomos) y un botón de acción (átomo) para presentar
+ * la información de manera cohesiva y visualmente atractiva.
+ * * @param {CertificationCardProps} props - Las propiedades que definen el contenido de la tarjeta.
+ */
 export const CertificationCard: React.FC<CertificationCardProps> = ({
                                                                         title,
                                                                         issuer,
