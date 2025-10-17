@@ -4,7 +4,7 @@ export const profileData = {
     location: 'Chile',
     // Datos para la sección Hero
     hero: {
-        avatarUrl: 'https://i.ibb.co/nFtjvHv/1706629229091.jpg',
+        avatarUrl: 'https://i.ibb.co/8LxKnF26/1706629229091.webp',
         title: 'Hola, soy Bastián Rubio',
         subtitle: 'Estudiante de Ingeniero en informática',
         university: 'Duoc UC',
