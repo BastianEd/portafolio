@@ -75,11 +75,17 @@ body {
 }
 /* DESPUÉS (Más limpio y alineado con Tailwind) */
 @media (max-width: 767px) {
+    #inicio {
+        /* Añadimos un padding superior específico para el Hero en móviles */
+        padding-top: 5rem;
+    }
     .badge-gradient-border {
-        margin-top: 1.4rem; /* Evita !important si es posible */
+        margin-top: 1.4rem;
         border-width: 3.5px;
     }
 }
+/* Añadimos un padding superior específico para el Hero en móviles */
+
 /*==============================================================================*/
 /*=====================ESTILO DE LOGO DE NAVBAR=================================*/
 /*==============================================================================*/
