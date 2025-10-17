@@ -11,6 +11,8 @@ export const MobileMenuButton: React.FC<MobileMenuButtonProps> = ({ isOpen, onCl
             onClick={onClick}
             className="md:hidden flex flex-col gap-1.5 p-2 focus:outline-none"
             aria-label="Toggle menu"
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
         >
       <span
           className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${

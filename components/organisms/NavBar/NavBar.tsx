@@ -43,11 +43,12 @@ export const Navbar: React.FC = () => {
             </nav>
 
             {isOpen && (
-                <div className="md:hidden bg-gray-900/98 backdrop-blur-sm border-t border-gray-800">
-                    <div className="flex flex-col gap-4 px-4 py-6">
+                <div id="mobile-menu" className="md:hidden bg-gray-900/98 backdrop-blur-sm border-t border-gray-800">
+                    {/* Alineamos los elementos al inicio y añadimos un poco de padding-left */}
+                    <div className="flex flex-col gap-4 px-4 py-6 items-start">
                         {menuItems.map((item) => (
-                            // -> 3. Pasa el ícono aquí también
-                            <NavLink key={item.label} href={item.href} icon={item.icon}>
+                            // -> 3. Pasa el ícono aquí también y cierra el menú al pulsar
+                            <NavLink key={item.label} href={item.href} icon={item.icon} onClick={() => setIsOpen(false)}>
                                 {item.label}
                             </NavLink>
                         ))}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { profileData } from '~/data/profile';
+import createDOMPurify from 'dompurify';
 
 export const About: React.FC = () => {
         const { about } = profileData;
@@ -10,9 +11,13 @@ export const About: React.FC = () => {
                         {about.title}
                     </h2>
                     <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
-                        {about.paragraphs.map((text, index) => (
-                            <p key={index} dangerouslySetInnerHTML={{ __html: text.replace(/<strong>/g, '<strong class="text-white">') }} />
-                        ))}
+                        {about.paragraphs.map((text, index) => {
+                            // Creamos una instancia de DOMPurify solo si `window` está disponible
+                            const purify = typeof window !== 'undefined' ? createDOMPurify(window) : { sanitize: (s: string) => s };
+                            const sanitized = purify.sanitize(text);
+                            const withStrongClass = sanitized.replace(/<strong>/g, '<strong class="text-white">');
+                            return <p key={index} dangerouslySetInnerHTML={{ __html: withStrongClass }} />;
+                        })}
                     </div>
                 </div>
             </section>
