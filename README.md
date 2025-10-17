@@ -4,7 +4,7 @@
 
 Este es el repositorio de mi portafolio personal, una Single Page Application (SPA) construida desde cero para mostrar mis habilidades, experiencia y proyectos. El objetivo era crear una web moderna, rápida y visualmente atractiva, aplicando las mejores prácticas de desarrollo Frontend.
 
-**[➡️ Ver el portafolio en vivo]()** *(<-- FUTURO PROXIMO)*
+**[➡️ Ver el portafolio en vivo](https://bastian-dev.netlify.app/)** *(<-- HAZ CLICK)*
 
 ---
 
