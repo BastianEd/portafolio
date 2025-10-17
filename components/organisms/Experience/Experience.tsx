@@ -2,6 +2,13 @@ import React from 'react';
 import { WorkItem } from '../../molecules/WorkItem/WorkItem';
 import { profileData } from '~/data/profile';
 
+/**
+ * Componente Organismo: Experience
+ * * Renderiza la sección de "Experiencia laboral" como una línea de tiempo.
+ * Obtiene los datos de experiencia desde `profileData` y mapea cada entrada
+ * para renderizar un componente molecular `WorkItem`, creando una lista
+ * vertical que representa la trayectoria profesional.
+ */
 export const Experience: React.FC = () => (
     <section id="experiencia" className="py-20 px-4">
         <div className="max-w-4xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-[1440px] mx-auto">

@@ -1,6 +1,13 @@
 import React from 'react';
 import { SocialLinks } from '../../molecules/SocialLinks/SocialLinks';
 
+/**
+ * Componente Organismo: Footer
+ * * Renderiza el pie de página global de la aplicación.
+ * Este componente agrupa información de contacto, enlaces a redes sociales
+ * a través de la molécula `SocialLinks`, y el aviso de copyright. Su diseño
+ * es responsivo, adaptándose de una columna en móvil a una fila en escritorio.
+ */
 export const Footer: React.FC = () => {
     return (
         <footer className="py-12 px-4 border-t border-gray-800">
@@ -12,7 +19,7 @@ export const Footer: React.FC = () => {
                     <div className="text-center md:text-left">
                         <p className="text-white font-semibold text-lg">Bastian Rubio</p>
                         <p className="text-gray-400 text-sm">
-                            Estudiante de Ingeniero en informática • Chile.
+                            Estudiante de Ingeniería en informática • Chile.
                         </p>
                     </div>
 

@@ -2,6 +2,13 @@ import React from 'react';
 import { profileData } from '~/data/profile';
 import createDOMPurify from 'dompurify';
 
+/**
+ * Componente Organismo: About
+ * * Renderiza la sección "Sobre mí" del portafolio.
+ * Se encarga de mostrar el título de la sección y los párrafos descriptivos
+ * obtenidos desde `profileData`. Utiliza DOMPurify para sanear el contenido
+ * HTML antes de renderizarlo, garantizando la seguridad contra ataques XSS.
+ */
 export const About: React.FC = () => {
         const { about } = profileData;
         return (

@@ -5,7 +5,13 @@ import { SocialLinks } from '../../molecules/SocialLinks/SocialLinks';
 import { profileData } from '~/data/profile';
 import createDOMPurify from 'dompurify';
 
-
+/**
+ * Componente Organismo: Hero
+ * * Renderiza la sección principal de bienvenida del portafolio.
+ * Este organismo es la primera impresión del usuario y combina múltiples
+ * átomos (`Button`, `Badge`) y moléculas (`SocialLinks`) para presentar
+ * el título, subtítulo, descripción y llamadas a la acción principales.
+ */
 export const Hero: React.FC = () => {
     const { hero } = profileData; // Extrae la sección hero
     // Creamos una instancia de DOMPurify solo si `window` está disponible

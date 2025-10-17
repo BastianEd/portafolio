@@ -2,6 +2,15 @@ import React from 'react';
 import { ProjectCard } from '../../molecules/ProjectCard/ProjectCard';
 import { profileData } from '~/data/profile';
 
+/**
+ * Componente Organismo: Projects
+ * * Renderiza la sección completa de "Proyectos Destacados".
+ * Este componente se encarga de:
+ * 1.  Mostrar un título para la sección.
+ * 2.  Obtener la lista de proyectos desde el archivo de datos `profileData`.
+ * 3.  Iterar sobre los datos y renderizar un componente molecular `ProjectCard`
+ * por cada proyecto en una grilla responsiva.
+ */
 export const Projects: React.FC = () => {
     return (
         <section id="proyectos" className="py-20 px-4 bg-gray-900/50">

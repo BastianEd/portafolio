@@ -2,6 +2,13 @@ import React from 'react';
 import { CertificationCard } from '../../molecules/CertificationCard/CertificationCard';
 import { profileData } from '~/data/profile';
 
+/**
+ * Componente Organismo: Certifications
+ * * Renderiza la sección completa de "Certificaciones".
+ * Este organismo obtiene la lista de certificaciones desde `profileData` y
+ * renderiza una molécula `CertificationCard` por cada una, organizándolas
+ * en una grilla responsiva.
+ */
 export const Certifications: React.FC = () => {
     return (
         <section id="certificaciones" className="py-20 px-4">
