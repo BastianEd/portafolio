@@ -15,7 +15,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <title>Bastian Dev</title>
-            <link rel="icon" type="image/png" href="/assets/icono-ventana.ico" />
+            <link rel="icon" type="image/png" href="https://i.ibb.co/yFtQQqL7/icono-ventana.png" />
             <Meta />
             <Links />
         </head>
