@@ -56,52 +56,60 @@ export const profileData = {
     ],
 
     //Certificaciones
+            //Se tuvo que migrar las imagenes a un hosting externo debido a problemas de carga en Netlify de la imagenes locales.
     certifications: [
         {
             title: 'Introduction to Cybersecurity',
             issuer: 'Cisco',
             issueDate: '27/05/2025',
             credentialUrl: 'https://www.credly.com/badges/b375038e-3872-4ba3-9950-98838eea1921/public_url',
-            badgeImage: 'https://i.ibb.co/JRhbKVYk/cyberseguridad.webp'
+            badgeImage: 'https://i.ibb.co/JRhbKVYk/cyberseguridad.webp',
+            //badgeImage: 'assets/certifications/cybersecurity.webp'
         },
         {
             title: 'Artificial Intelligence Professional Certification - CAIPC®',
             issuer: 'Certiprof',
             issueDate: '11/10/2025 | Expira: 11/10/2028',
             credentialUrl: 'https://www.credly.com/badges/3d60ff55-7d30-459b-a169-cc27f0a30ced/public_url',
-            badgeImage: 'https://i.ibb.co/7tBtwW06/blob.webp'
+            badgeImage: 'https://i.ibb.co/7tBtwW06/blob.webp',
+            //badgeImage: 'assets/certifications/certiprof-ai.webp'
         },
         {
             title: 'Python Essentials 1',
             issuer: 'Cisco',
             issueDate: '02/06/2024',
             credentialUrl: 'https://www.credly.com/badges/b92ee607-04e5-47c6-b33c-8353e7abdb05/public_url',
-            badgeImage: 'https://i.ibb.co/5xMtF3kf/python.webp'
+            badgeImage: 'https://i.ibb.co/5xMtF3kf/python.webp',
+            //badgeImage: 'assets/certifications/python-essentials-1.webp'
         },
         {
             title: 'Introduction to Cloud',
             issuer: 'IBM Developer Skills Network',
             issueDate: '22/02/2024',
             credentialUrl: 'https://courses.cognitiveclass.ai/certificates/2eb17cae793047c2974d06a9a16d301d',
-            badgeImage: 'https://i.ibb.co/RpnVxDvN/ibm-logo.webp'
+            badgeImage: 'https://i.ibb.co/RpnVxDvN/ibm-logo.webp',
+            //badgeImage: 'assets/certifications/ibm-logo.webp'
         },
         {
             title: 'Red Hat System Administration I (RH124 - RHA) - Ver. 9.3',
             issuer: 'Red Hat',
             issueDate: '19/09/2025',
             credentialUrl: 'https://www.credly.com/earner/earned/badge/7f6af487-c6d2-4fa0-8317-74e5a69c2155',
-            badgeImage: 'https://i.ibb.co/gMNTVmPK/RedHat.webp'
+            badgeImage: 'https://i.ibb.co/gMNTVmPK/RedHat.webp',
+            //badgeImage: 'assets/certifications/redhat-logo.webp'
         },
         {
             title: 'SQL and Relational Databases 101',
             issuer: 'IBM Developer Skills Network',
             issueDate: '20/09/2025',
             credentialUrl: 'https://courses.cognitiveclass.ai/certificates/298833c7b11b4daaafba23cbd1779652',
-            badgeImage: 'https://i.ibb.co/RpnVxDvN/ibm-logo.webp'
+            badgeImage: 'https://i.ibb.co/RpnVxDvN/ibm-logo.webp',
+            //badgeImage: 'assets/certifications/ibm-logo.webp'
         }
 
     ],
     // Datos para la sección de Proyectos
+        //Se tuvo que migrar las imagenes a un hosting externo debido a problemas de carga en Netlify de la imagenes locales.
     projects: [
         {
             title: 'Pastelería Mil Sabores Dulces',
@@ -109,7 +117,8 @@ export const profileData = {
             tags: ['HTML', 'CSS', 'JavaScript', 'Responsive', 'Authentication','Bootstrap'],
             github: 'https://github.com/BastianEd/MilSaboresDulces',
             demo: 'https://pasteleriamilsabores.netlify.app/',
-            image: 'https://i.ibb.co/hFz0kwfK/pasteleria-mil-sabores.webp'
+            image: 'https://i.ibb.co/hFz0kwfK/pasteleria-mil-sabores.webp',
+            //image: 'assets/projects/mil-sabores-dulces.webp'
         },
         {
             title: 'GameZone - Tienda de Videojuegos',
@@ -117,14 +126,16 @@ export const profileData = {
             tags: ['HTML', 'CSS', 'JavaScript', 'Responsive', 'Authentication','Bootstrap'],
             github: 'https://github.com/BastianEd/Web_GameZon_Evaluacion_Uno',
             demo: 'https://gamezone-store.netlify.app/',
-            image: 'https://i.ibb.co/FkSJySHr/gamezone.webp'
+            image: 'https://i.ibb.co/FkSJySHr/gamezone.webp',
+            //image: 'assets/projects/gamezone.webp'
         },
         {
             title: 'API REST de Inventario para Constructora',
             description: 'API RESTful robusta para gestionar herramientas, trabajadores y préstamos. Incluye endpoints V1 (tradicional) y V2 (HATEOAS) con documentación Swagger.',
             tags: ['Java', 'Spring Boot', 'Spring Data JPA', 'MySQL', 'HATEOAS', 'JUnit5', 'Mockito', 'Swagger'],
             github: 'https://github.com/BastianEd/Inventario_Herramientas_Constructora',
-            image: 'https://i.ibb.co/qFjbtHM6/inventario-constructora.webp'
+            image: 'https://i.ibb.co/qFjbtHM6/inventario-constructora.webp',
+            //image: 'assets/projects/inventario-constructora.webp'
         },
     ],
     // Links para redes sociales
