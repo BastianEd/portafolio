@@ -46,9 +46,6 @@ export const Hero: React.FC = () => {
                     <Button href={hero.cvLink} variant="secondary">
                         Curriculum Vitae
                     </Button>
-                    <Button href={hero.projectsLink} variant="secondary">
-                        Ver proyectos
-                    </Button>
                 </div>
 
                 <div className="flex justify-center mt-10">

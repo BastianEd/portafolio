@@ -13,7 +13,7 @@ vi.mock('../../atoms/NavLink/NavLink', () => ({
 
 describe('Componente: NavMenu', () => {
     const menuItems = [
-        { label: 'Inicio', href: '#' },
+        { label: 'Inicio', href: '#inicio' },
         { label: 'Experiencia', href: '#experiencia' },
         { label: 'Certificaciones', href: '#certificaciones' },
         { label: 'Proyectos', href: '#proyectos' },

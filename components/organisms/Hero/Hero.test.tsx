@@ -13,7 +13,6 @@ vi.mock('~/data/profile', () => ({
             description: 'Apasionado por la programación.',
             contactLink: '#contact',
             cvLink: '#cv',
-            projectsLink: '#proyectos',
         },
     },
 }));
@@ -42,11 +41,9 @@ describe('Componente: Hero', () => {
 
         const contactButton = screen.getByRole('link', { name: 'Contáctame' });
         const cvButton = screen.getByRole('link', { name: 'Curriculum Vitae' });
-        const projectsButton = screen.getByRole('link', { name: 'Ver proyectos' });
 
         expect(contactButton).toHaveAttribute('href', '#contact');
         expect(cvButton).toHaveAttribute('href', '#cv');
-        expect(projectsButton).toHaveAttribute('href', '#proyectos');
     });
 
     it('debe renderizar el componente SocialLinks', () => {

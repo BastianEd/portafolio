@@ -15,7 +15,7 @@ describe('Componente: Footer', () => {
 
     it('debe renderizar el nombre y la descripción del autor', () => {
         expect(screen.getByText('Bastian Rubio')).toBeInTheDocument();
-        expect(screen.getByText(/Estudiante de Ingeniero en informática/)).toBeInTheDocument();
+        expect(screen.getByText(/Estudiante de Ingeniería en informática • Chile/)).toBeInTheDocument();
     });
 
     it('debe renderizar el componente SocialLinks', () => {

@@ -13,7 +13,6 @@ export const profileData = {
                         combinen automatización, bases de datos y soluciones web.
                         `,
         contactLink: 'https://www.linkedin.com/in/bastián-rubio-meneses/',
-        projectsLink: '#proyectos',
         cvLink: 'https://docs.google.com/document/d/1IdjeutWH_cJMieToEg0W_XCc0zqk853iq7cp9Q2zdis/edit?usp=sharing'
     },
     // Datos para la sección Sobre Mí
@@ -50,7 +49,7 @@ export const profileData = {
         {
             title: "Practicante Profesional",
             company: "Banco de Chile",
-            period: "Diciembre 2023 — Enero 2024",
+            period: "Diciembre 2023 — Febrero 2024",
             description: `Desarrollé una herramienta CLI en Python para analizar y validar mallas de Control‑M, detectando inconsistencias y permitiendo modificaciones automatizadas con la libreria xml.etree.ElementTree. Contribuí en el área de Big Data del banco, apoyando la automatización de procesos y la mejora continua.`
         }
     ],
@@ -94,7 +93,7 @@ export const profileData = {
             title: 'Red Hat System Administration I (RH124 - RHA) - Ver. 9.3',
             issuer: 'Red Hat',
             issueDate: '19/09/2025',
-            credentialUrl: 'https://www.credly.com/earner/earned/badge/7f6af487-c6d2-4fa0-8317-74e5a69c2155',
+            credentialUrl: 'https://www.credly.com/badges/7f6af487-c6d2-4fa0-8317-74e5a69c2155/public_url',
             badgeImage: 'https://i.ibb.co/gMNTVmPK/RedHat.webp',
             //badgeImage: 'assets/certifications/redhat-logo.webp'
         },
