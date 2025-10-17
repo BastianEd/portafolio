@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
                 <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto"
                    dangerouslySetInnerHTML={{ __html: finalDescription }}
                 />
-                <div className="flex justify-center gap-4 mb-8">
+                <div className="flex justify-center flex-wrap gap-4 mb-8">
                     <Button href={hero.contactLink} variant="primary">
                         Contáctame
                     </Button>

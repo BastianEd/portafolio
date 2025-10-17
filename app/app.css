@@ -73,10 +73,10 @@ body {
         background-position: 200% center;
     }
 }
-/* A partir de 768px, el borde vuelve a ser más grueso */
-@media (min-width: 300px) and (max-width: 767px) {
+/* DESPUÉS (Más limpio y alineado con Tailwind) */
+@media (max-width: 767px) {
     .badge-gradient-border {
-        margin-top: 1.4rem !important;
+        margin-top: 1.4rem; /* Evita !important si es posible */
         border-width: 3.5px;
     }
 }
