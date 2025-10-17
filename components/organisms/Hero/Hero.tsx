@@ -23,7 +23,14 @@ export const Hero: React.FC = () => {
     return (
         <section id="inicio" className="flex flex-col justify-center items-center px-4 py-12 md:py-24">
             <div className="max-w-4xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-[1440px] mx-auto text-center">
-                <div className="relative inline-flex items-center justify-center">
+                {hero.avatarUrl && (
+                    <img
+                        src={hero.avatarUrl}
+                        alt="Foto de perfil de Bastián Rubio"
+                        className="w-42 h-42 md:w-74 md:h-74 rounded-full object-cover mx-auto mb-6 border-2 border-gray-700 shadow-lg"
+                    />
+                )}
+                <div className="relative inline-flex items-center justify-center h-8">
                     <span className="absolute inset-0 rounded-full pointer-events-none animate-spin-gradient z-0" />
                     <Badge color="bg-transparent" gradientBorder>
                         Disponible para trabajar
