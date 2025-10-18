@@ -1,6 +1,11 @@
 import React from 'react';
-import { Badge } from '../../atoms/Badge/Badge';
 import { Button } from '../../atoms/Button/Button';
+import { TechIcon } from '../../atoms/TechIcon/TechIcon';
+
+//icons library
+import { PiGithubLogoFill } from "react-icons/pi";
+import { FaLink } from 'react-icons/fa6';
+
 
 interface ProjectCardProps {
     title: string;
@@ -42,22 +47,24 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                     </div>
                 )}
             </div>
-            <div className="p-6">
+            <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
-                <p className="text-gray-400 mb-4">{description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                    {tags.map((tag) => (
-                        <Badge key={tag}>{tag}</Badge>
+                <p className="text-gray-400 mb-4 flex-grow">{description}</p>
 
+                {/* Cambio de Badge a iconMap*/}
+                <div className="flex flex-wrap items-center gap-4 mb-6">
+                    {tags.map((tag) => (
+                        <TechIcon key={tag} tech={tag} />
                     ))}
                 </div>
-                <div className="flex gap-3">
-                    <Button href={github} variant="secondary">
-                        Ver código
+
+                <div className="flex gap-3 mt-auto"> {/* mt-auto empuja los botones al final */}
+                    <Button href={github} variant="secondary" icon={<PiGithubLogoFill />}>
+                        Código
                     </Button>
                     {demo && (
-                        <Button href={demo} variant="primary">
-                            Ver Preview
+                        <Button href={demo} variant="primary" icon={<FaLink />}>
+                            Preview
                         </Button>
                     )}
                 </div>

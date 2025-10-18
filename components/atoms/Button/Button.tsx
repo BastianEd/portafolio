@@ -5,6 +5,7 @@ interface ButtonProps {
     href?: string;
     onClick?: () => void;
     variant?: 'primary' | 'secondary';
+    icon?: React.ReactNode;
 }
 
 /**
@@ -18,29 +19,37 @@ export const Button: React.FC<ButtonProps> = ({
                                                   children,
                                                   href,
                                                   onClick,
-                                                  variant = 'primary'
+                                                  variant = 'primary',
+                                                  icon,
                                               }) => {
-    const baseClasses = 'px-4 py-2 rounded-lg font-medium transition-all duration-300';
+    const baseClasses = 'inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-300';
     const variantClasses = variant === 'primary'
         ? 'bg-yellow-400 text-gray-900 hover:bg-yellow-300'
         : 'border border-gray-600 text-white hover:border-gray-400';
+
+    const content = (
+        <>
+            {icon}
+            {children}
+        </>
+    );
 
     if (href) {
         return (
             <a
                 href={href}
-                className={`${baseClasses} ${variantClasses} inline-block`}
+                className={`${baseClasses} ${variantClasses}`}
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                {children}
+                {content}
             </a>
         );
     }
 
     return (
             <button type="button" onClick={onClick} className={`${baseClasses} ${variantClasses}`}>
-            {children}
+            {content}
         </button>
     );
 };
