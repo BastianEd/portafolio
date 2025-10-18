@@ -3,6 +3,7 @@ import { CertificationCard } from '../../molecules/CertificationCard/Certificati
 import { profileData } from '~/data/profile';
 import { FcDiploma1 } from "react-icons/fc";
 
+
 /**
  * Componente Organismo: Certifications
  * * Renderiza la sección completa de "Certificaciones".

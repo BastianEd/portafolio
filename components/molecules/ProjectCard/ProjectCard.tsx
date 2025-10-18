@@ -48,6 +48,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 <div className="flex flex-wrap gap-2 mb-4">
                     {tags.map((tag) => (
                         <Badge key={tag}>{tag}</Badge>
+
                     ))}
                 </div>
                 <div className="flex gap-3">
@@ -56,7 +57,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                     </Button>
                     {demo && (
                         <Button href={demo} variant="primary">
-                            Ver demo
+                            Ver Preview
                         </Button>
                     )}
                 </div>

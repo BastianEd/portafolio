@@ -13,7 +13,7 @@ export const profileData = {
                         Me especializo en Ciencia de Datos y disfruto desarrollar proyectos que 
                         combinen automatización, bases de datos y soluciones web.
                         `,
-        contactLink: 'https://www.linkedin.com/in/bastián-rubio-meneses/',
+        contactLink: 'mailto:bastian-rubio@example.cl',
         cvLink: 'https://docs.google.com/document/d/1IdjeutWH_cJMieToEg0W_XCc0zqk853iq7cp9Q2zdis/edit?usp=sharing'
     },
     // Datos para la sección Sobre Mí
