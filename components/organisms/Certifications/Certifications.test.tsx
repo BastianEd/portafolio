@@ -3,6 +3,20 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { Certifications } from './Certifications';
 
+/**
+ * @file Archivo de pruebas para el componente `Certifications`.
+ *
+ * @description
+ * Esta suite de pruebas valida el organismo `Certifications`. La estrategia de testing
+ * se centra en el aislamiento del componente mediante un doble "mocking":
+ *
+ * 1.  **Mock de Datos (`profileData`):** Se simula la fuente de datos para asegurar
+ * que la prueba sea predecible y no dependa de los datos reales.
+ * 2.  **Mock del Componente Hijo (`CertificationCard`):** Se simula el componente
+ * molecular para que la prueba se enfoque únicamente en la lógica del organismo
+ * `Certifications` (es decir, que renderice su título y mapee correctamente los datos
+ * para generar la lista de hijos), sin testear la implementación interna de `CertificationCard`.
+ */
 vi.mock('~/data/profile', () => ({
     profileData: {
         certifications: [

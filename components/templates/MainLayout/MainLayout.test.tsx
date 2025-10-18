@@ -3,6 +3,21 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { MainLayout } from './MainLayout';
 
+/**
+ * @file Archivo de pruebas para el componente de plantilla `MainLayout`.
+ *
+ * @description
+ * Esta suite de pruebas valida las dos responsabilidades principales del template `MainLayout`:
+ *
+ * 1.  **Estructura Fija:** Se asegura de que el componente `Navbar` (un organismo)
+ * esté siempre presente en la estructura de la página. Para aislar la prueba,
+ * se utiliza un "mock" de `Navbar`.
+ *
+ * 2.  **Contenido Dinámico (`children`):** Se verifica que cualquier elemento o
+ * componente pasado como `children` se renderice correctamente dentro de la
+ * etiqueta `<main>`, confirmando que el layout cumple su función de
+ * contenedor principal.
+ */
 // Mockeamos el Navbar, ya que solo nos interesa saber si MainLayout lo incluye,
 // no cómo funciona Navbar internamente.
 vi.mock('../../organisms/NavBar/NavBar', () => ({

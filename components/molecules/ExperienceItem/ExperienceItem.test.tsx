@@ -3,6 +3,22 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect, beforeEach } from 'vitest';
 import { ExperienceItem } from './ExperienceItem';
 
+/**
+ * @file Archivo de pruebas para el componente molecular `ExperienceItem`.
+ *
+ * @description
+ * Esta suite de pruebas valida que el componente `ExperienceItem` renderice
+ * correctamente todos los datos textuales que recibe a través de sus props.
+ * Se utiliza un hook `beforeEach` para renderizar el componente con un objeto
+ * mockeado, asegurando que cada prueba se ejecute sobre una instancia limpia
+ * del componente.
+ *
+ * Las pruebas verifican individualmente la presencia de:
+ * - El título del puesto.
+ * - El nombre de la compañía.
+ * - El período de tiempo.
+ * - La descripción de la experiencia.
+ */
 describe('Componente: ExperienceItem', () => {
     const mockExperience = {
         title: 'Practicante Profesional',

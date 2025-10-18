@@ -4,6 +4,18 @@ import { describe, it, expect, vi } from 'vitest';
 import { NavLink } from './NavLink';
 import { FaHome } from 'react-icons/fa';
 
+/**
+ * @file Archivo de pruebas para el componente atómico `NavLink`.
+ *
+ * @description
+ * Esta suite de pruebas valida el comportamiento del componente `NavLink`,
+ * que es un elemento fundamental en la navegación de la aplicación.
+ * Las pruebas cubren los siguientes aspectos:
+ * 1. Renderizado básico: Confirma que el enlace se muestra con el `href` y el texto correctos.
+ * 2. Estados visuales: Verifica que las clases CSS cambian correctamente entre el estado inactivo (default) y activo.
+ * 3. Renderizado condicional: Asegura que el ícono se renderice solo cuando se proporciona.
+ * 4. Interacción del usuario: Valida que la función `onClick` se ejecuta cuando el usuario hace clic en el enlace.
+ */
 describe('Componente: NavLink', () => {
     // Prueba 1: Renderizado básico.
     it('debe renderizar el enlace con su texto y href', () => {

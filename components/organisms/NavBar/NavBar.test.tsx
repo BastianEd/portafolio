@@ -3,6 +3,25 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { Navbar } from './NavBar';
 
+/**
+ * @file Archivo de pruebas para el componente `Navbar`.
+ *
+ * @description
+ * Esta suite de pruebas valida el organismo `Navbar`, que es un componente con estado
+ * y lógica de interacción compleja. La estrategia se basa en el aislamiento total
+ * del componente mediante el "mocking" de todos sus hijos (`NavMenu`, `MobileMenuButton`, `NavLink`).
+ *
+ * Las pruebas cubren los siguientes comportamientos críticos:
+ * 1.  **Manejo de Estado del Menú Móvil:** Se simulan clics en el botón para verificar
+ * que el menú desplegable se muestra y se oculta correctamente.
+ * 2.  **Flujo de Interacción:** Se prueba que al hacer clic en un enlace del menú
+ * móvil, este se cierra, validando la comunicación entre componentes.
+ * 3.  **Renderizado Base:** Se asegura que los elementos estáticos, como el logo y el
+ * menú de escritorio, estén siempre presentes.
+ * 4.  **Efectos Secundarios (Hooks):** Se simula un evento de `scroll` en la ventana
+ * para confirmar que el `useEffect` del componente aplica las clases CSS
+ * dinámicas correctamente.
+ */
 // Mocks de los componentes hijos (sin cambios)
 vi.mock('../../molecules/NavMenu/NavMenu', () => ({
     NavMenu: () => <div data-testid="nav-menu-desktop" />,

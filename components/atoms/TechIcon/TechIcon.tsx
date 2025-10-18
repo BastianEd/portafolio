@@ -1,20 +1,6 @@
 import React from 'react';
-import {
-    FaJava,
-    FaCss3Alt,
-    FaHtml5,
-    FaBootstrap,
-    FaReact,
-} from 'react-icons/fa';
-import {
-    SiJavascript,
-    SiSpringboot,
-    SiMysql,
-    SiJunit5,
-    SiSwagger,
-    SiTailwindcss,
-    SiTypescript,
-} from 'react-icons/si';
+import {FaJava, FaCss3Alt, FaHtml5, FaBootstrap, FaReact,} from 'react-icons/fa';
+import {SiJavascript, SiSpringboot, SiMysql, SiJunit5, SiSwagger, SiTailwindcss, SiTypescript,} from 'react-icons/si';
 
 // Objeto que mapea un string (el tag) al componente de ícono correspondiente.
 // Usamos claves en minúsculas para estandarizar.
@@ -37,10 +23,7 @@ const iconMap: { [key: string]: React.ElementType } = {
     // Añade aquí más tecnologías para el futuro
 };
 
-interface TechIconProps {
-    tech: string;
-    className?: string;
-}
+interface TechIconProps {tech: string;className?: string;}
 
 /**
  * Componente Atómico: TechIcon

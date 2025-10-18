@@ -1,17 +1,27 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { describe, it, expect } from 'vitest';
-import { ProjectCard } from './ProjectCard';
-
-import React from 'react';
-import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { ProjectCard } from './ProjectCard';
-import { FaGithub, FaLink } from 'react-icons/fa';
+
+/**
+ * @file Archivo de pruebas para el componente molecular `ProjectCard`.
+ *
+ * @description
+ * Esta suite de pruebas está dedicada a validar el componente `ProjectCard`.
+ * La estrategia principal es el aislamiento: los componentes atómicos hijos
+ * (`Button` y `TechIcon`) se mockean para asegurar que las pruebas se centren
+ * exclusivamente en la lógica y la estructura de `ProjectCard`.
+ *
+ * Se validan los siguientes escenarios:
+ * 1. Renderizado de la información principal del proyecto (título, descripción, imagen).
+ * 2. Renderizado correcto de la lista de tecnologías (`tags`).
+ * 3. Presencia y atributos correctos de los botones de acción ("Código" y "Preview").
+ * 4. Renderizado condicional del botón "Preview" (solo si existe `demo`).
+ * 5. Comportamiento de fallback cuando no se proporciona una imagen.
+ */
 
 // Mockeamos los componentes hijos (átomos) para aislar las pruebas a la molécula ProjectCard.
 // Esto nos asegura que estamos probando solo la lógica de ProjectCard, no la de sus hijos.
-
 vi.mock('../../atoms/Button/Button', () => ({
     // Simulamos el componente Button. Guardamos sus props para poder verificarlas.
     Button: ({ children, href, icon }: { children: React.ReactNode, href: string, icon: React.ReactNode }) => (
@@ -21,12 +31,10 @@ vi.mock('../../atoms/Button/Button', () => ({
         </a>
     ),
 }));
-
 vi.mock('../../atoms/TechIcon/TechIcon', () => ({
     // Simulamos TechIcon. Solo nos importa que se renderice con el 'tech' correcto.
     TechIcon: ({ tech }: { tech: string }) => <div data-testid="tech-icon">{tech}</div>,
 }));
-
 
 describe('Componente: ProjectCard', () => {
     const mockProject = {

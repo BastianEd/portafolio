@@ -3,6 +3,23 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { About } from './About';
 
+/**
+ * @file Archivo de pruebas para el componente `About`.
+ *
+ * @description
+ * Esta suite de pruebas valida el componente `About`, que es responsable de
+ * renderizar la sección "Sobre mí" del portafolio. Las pruebas se centran en
+ * tres áreas clave:
+ *
+ * 1.  **Aislamiento del Componente:** Se mockean los datos de `profileData` para
+ * asegurar que la prueba sea independiente de la fuente de datos real.
+ * 2.  **Renderizado de Contenido:** Se verifica que tanto el título de la sección
+ * como los párrafos de texto se muestren correctamente.
+ * 3.  **Manejo de HTML:** Se prueba específicamente que el componente pueda
+ * renderizar etiquetas HTML (`<strong>`) inyectadas desde los datos y que
+ * aplique clases dinámicas a estas etiquetas, validando la lógica de
+ * manipulación de strings y el uso de `dangerouslySetInnerHTML`.
+ */
 // Mockeamos los datos para aislar el componente
 vi.mock('~/data/profile', () => ({
     profileData: {

@@ -3,6 +3,17 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import { Link } from './Link';
 
+/**
+ * @file Archivo de pruebas para el componente atómico `Link`.
+ *
+ * @description
+ * Este archivo contiene una suite de pruebas para el componente `Link` utilizando
+ * Vitest y React Testing Library. Las pruebas se centran en verificar:
+ * 1. El renderizado correcto del enlace con su `href` y contenido.
+ * 2. El comportamiento por defecto para enlaces internos (sin `target="_blank"`).
+ * 3. La adición de los atributos `target="_blank"` y `rel="noopener noreferrer"`
+ * para enlaces externos, garantizando la seguridad y la funcionalidad esperada.
+ */
 describe('Componente: Link', () => {
     const testUrl = 'https://example.com';
 

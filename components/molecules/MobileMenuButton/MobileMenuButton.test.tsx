@@ -3,6 +3,20 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { MobileMenuButton } from './MobileMenuButton';
 
+/**
+ * @file Archivo de pruebas para el componente molecular `MobileMenuButton`.
+ *
+ * @description
+ * Esta suite de pruebas está diseñada para validar el comportamiento visual y
+ * funcional del botón de menú móvil. Las pruebas se centran en tres áreas clave:
+ *
+ * 1.  **Estado Cerrado (`isOpen: false`):** Verifica que el botón se renderiza
+ * correctamente como un ícono de "hamburguesa".
+ * 2.  **Estado Abierto (`isOpen: true`):** Asegura que el botón se transforma
+ * visualmente en un ícono de "X" mediante la aplicación de clases CSS.
+ * 3.  **Interactividad:** Confirma que la función `onClick` proporcionada se
+ * ejecuta cuando el usuario hace clic en el botón.
+ */
 describe('Componente: MobileMenuButton', () => {
     // Prueba 1: Verifica el estado cerrado (default)
     it('debe renderizar el ícono de hamburguesa cuando está cerrado', () => {

@@ -1,5 +1,5 @@
 // Archivo de pruebas para el componente `Button`.
-// Aquí usamos Testing Library para renderizar el componente y Vitest
+// Aquí uso Testing Library para renderizar el componente y Vitest
 // como runner/mocks (vi) para espiar funciones.
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';

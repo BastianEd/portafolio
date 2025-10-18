@@ -3,6 +3,20 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import { WorkItem } from './WorkItem';
 
+/**
+ * @file Archivo de pruebas para el componente molecular `WorkItem`.
+ *
+ * @description
+ * Esta suite de pruebas se enfoca en validar el componente `WorkItem`, que se utiliza
+ * para mostrar una entrada individual en la línea de tiempo de experiencia.
+ *
+ * Las pruebas cubren dos aspectos principales:
+ * 1.  **Renderizado de Contenido Principal:** Se asegura de que toda la información
+ * básica (título, compañía, período y descripción) se muestre correctamente.
+ * 2.  **Renderizado Condicional:** Se valida que el enlace "Saber más" aparezca
+ * únicamente cuando se proporciona la prop `moreLink`, y que esté ausente
+ * en caso contrario.
+ */
 describe('Componente: WorkItem', () => {
     const mockWorkItem = {
         title: 'Desarrollador Frontend',
