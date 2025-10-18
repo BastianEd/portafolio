@@ -4,9 +4,22 @@
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
-// Importamos el componente Button desde el archivo local.
 import { Button } from './Button';
 
+/**
+ * @file Archivo de pruebas para el componente atómico `Button`.
+ *
+ * @description
+ * Esta suite de pruebas valida el comportamiento polimórfico y funcional del
+ * componente `Button`. Las pruebas se aseguran de que el componente actúe
+ * correctamente tanto como un botón estándar como un enlace, dependiendo de
+ * las props que reciba.
+ *
+ * Se cubren los siguientes casos de uso:
+ * 1.  Renderizado del contenido principal (`children`).
+ * 2.  Transformación a un elemento `<a>` cuando se proporciona la prop `href`.
+ * 3.  Ejecución de la función `onClick` al simular la interacción del usuario.
+ */
 // Grupo de pruebas para el componente Button.
 // `describe` nos permite agrupar varios `it` relacionados.
 describe('Componente: Button', () => {

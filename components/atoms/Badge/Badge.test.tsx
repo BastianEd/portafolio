@@ -3,6 +3,19 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import { Badge } from './Badge';
 
+/**
+ * @file Archivo de pruebas para el componente atómico `Badge`.
+ *
+ * @description
+ * Esta suite de pruebas valida el componente `Badge`, asegurando que renderice
+ * su contenido y aplique las clases CSS correctas en función de las props recibidas.
+ *
+ * Las pruebas cubren los siguientes escenarios:
+ * 1.  Renderizado del contenido (`children`).
+ * 2.  Aplicación de la clase de color por defecto cuando no se especifica una.
+ * 3.  Aplicación de una clase de color personalizada a través de la prop `color`.
+ * 4.  Aplicación de la clase para el borde con gradiente cuando `gradientBorder` es `true`.
+ */
 describe('Componente: Badge', () => {
     // Prueba 1: Asegura que el contenido (children) se renderice.
     it('debe renderizar el contenido correctamente', () => {
